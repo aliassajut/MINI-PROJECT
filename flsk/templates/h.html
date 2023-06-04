@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask API</title>
+</head>
+<body>
+    <h1>Welcome to Covid detection API</h1>
+    <p>Please upload your Ct scan image of your lungs</p>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file",accept="image/png">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
