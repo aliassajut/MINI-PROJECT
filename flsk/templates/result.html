@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}"> 
     <title>Flask API - Display Image</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Segmented Image</h1>
-    <img src="{{ url_for('static', filename=output) }}" alt="Segmented Image">
+    <div class="main">
+        <div class="heading">
+            <h1>SEGMENTED IMAGE</h1>
+        </div>
+        <div class="main-body">
+            <img src="{{ url_for('static', filename=output) }}" alt="Segmented Image">
+        </div>
+    </div>
 </body>
 </html>

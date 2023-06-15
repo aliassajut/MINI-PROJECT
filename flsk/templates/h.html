@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Flask API</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    <h1>Welcome to Covid detection API</h1>
-    <p>Please upload your Ct scan image of your lungs</p>
+    <div class = 'main'>
+        <div class = 'heading'>
+            <h1>Welcome to Covid Segmentation API</h1>
+            <p>Please upload your Ct scan image of your lungs</p>
+        </div>    
+        <div class='sub'>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class='inputing'>
+                <input class = 'accept' id = 'file-input' type="file" name="file",accept="image/png">
+                <!-- <label for='file-input'>
+                    <span class="material-symbols-outlined">
+                        upload_file
+                    </span>
+                    <div id = 'num-of-files'>No File Choosen</div>
 
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file",accept="image/png">
-        <input type="submit" value="Upload">
-    </form>
+                </label> -->
+            </div>
+            <div class = 'uploadbutton'>
+                <input class = 'upload' type="submit" value="Upload">
+            </div>    
+        </form>
+        </div>
+    </div>    
 </body>
 </html>

@@ -1,0 +1,28 @@
+body
+{
+    background-color: #7b2cbf;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+    border-radius: 50px;
+    background-color: white;
+    margin-top: 19vh;
+    margin-left: 25vh;
+    margin-right: 25vh;
+    height: 50vh;
+}
+
+.heading
+{
+    display: flex;
+    justify-content: center;
+}
+ 
